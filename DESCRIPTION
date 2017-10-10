@@ -1,0 +1,23 @@
+Package: VarPasMpiExamp
+Title: Toy model to get doMPI, foreach to work inside an R package
+Version: 0.1
+Authors@R: c (person("James", "Maas", email = "jimmaasuk@gmail.com", role = c("aut", "cre")),
+	     person("Stephen", "Weston", role = c("aut")))
+Description: A toy example package to demostrate a method to pass variables to parallel
+             calculations with doMPI.
+Depends: R (>= 2.5.0), foreach(>= 1.2.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Collate:
+    'DefaultParams.R'
+    'ForeachParamsPass.R'
+    'NestedFuncs.R'
+Imports:
+    foreach,
+    FAdist,
+    msm,
+    zoo
+NeedsCompilation: no
+Packaged: Tue 10 Oct 13:52:07 BST 2017 
+RoxygenNote: 6.0.1
